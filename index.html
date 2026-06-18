@@ -3,39 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Sitio oficial moderno simulado de Deportes Puerto Montt: noticias, primer equipo, calendario, tabla, tienda oficial, entradas y socios."
-    />
+    <meta name="description" content="Sitio oficial moderno simulado de Deportes Puerto Montt: noticias, primer equipo, calendario, tabla, tienda oficial, entradas y socios." />
     <meta name="theme-color" content="#071d39" />
     <meta property="og:title" content="Deportes Puerto Montt" />
-    <meta
-      property="og:description"
-      content="Pasión, historia y orgullo del sur. Vive el club, compra entradas y revisa la tienda oficial."
-    />
+    <meta property="og:description" content="Pasión, historia y orgullo del sur. Vive el club, compra entradas y revisa la tienda oficial." />
     <meta property="og:type" content="website" />
     <title>Deportes Puerto Montt | Sitio Oficial</title>
     
     <style>
-      /* 1. Oculta las imágenes reales en todos los contenedores de fotos */
-      .player-photo img {
+      img {
         display: none !important;
       }
 
-      /* 2. Aplica el recuadro gris con diseño de grilla a todos los contenedores */
-      .player-photo {
+      .player-photo, 
+      .product-image, 
+      .news-card__image,
+      .card-img,
+      .image-container {
         min-height: 180px;
-        display: grid;
-        place-items: center;
-        background: #eaf2f7;
+        width: 100%;
+        display: grid !important;
+        place-items: center !important;
+        background: #eaf2f7 !important;
+        position: relative;
       }
 
-      /* 3. Agrega el texto "DPM" en el centro de cada recuadro vacío */
-      .player-photo::before {
-        content: "DPM";
-        color: #071d39;
-        font-weight: 900;
-        font-size: 1.4rem;
+      .player-photo::before,
+      .product-image::before,
+      .news-card__image::before,
+      .card-img::before,
+      .image-container::before {
+        content: "DPM" !important;
+        color: #071d39 !important;
+        font-weight: 900 !important;
+        font-size: 1.4rem !important;
+        display: block !important;
       }
     </style>
 
