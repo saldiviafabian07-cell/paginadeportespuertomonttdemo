@@ -11,14 +11,19 @@
     <title>Deportes Puerto Montt | Sitio Oficial</title>
     
     <style>
-      /* Oculta las imágenes reales de los jugadores de forma estricta */
-      .player-photo img {
+      /* 1. Oculta absolutamente todas las imágenes reales de la página */
+      img {
         display: none !important;
         opacity: 0 !important;
       }
 
-      /* Transforma el contenedor de la foto en el recuadro gris */
-      .player-photo {
+      /* 2. Transforma los contenedores de jugadores y de noticias en bloques grises */
+      .player-photo,
+      .image-container,
+      .news-card figure,
+      .card figure,
+      .news-card__image,
+      .product-image {
         min-height: 180px !important;
         width: 100% !important;
         display: grid !important;
@@ -27,8 +32,13 @@
         position: relative !important;
       }
 
-      /* Añade el texto DPM en mayúsculas y centrado */
-      .player-photo::before {
+      /* 3. Aplica el texto DPM centrado y con estilo profesional a cada recuadro */
+      .player-photo::before,
+      .image-container::before,
+      .news-card figure::before,
+      .card figure::before,
+      .news-card__image::before,
+      .product-image::before {
         content: "DPM" !important;
         color: #071d39 !important;
         font-weight: 900 !important;
