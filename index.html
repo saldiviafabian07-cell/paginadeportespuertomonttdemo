@@ -11,32 +11,36 @@
     <title>Deportes Puerto Montt | Sitio Oficial</title>
     
     <style>
-      img {
+      /* Ocultamos las imágenes originales de Messi y de la polera de Brasil */
+      .news-card:nth-child(2) img,
+      .news-card:nth-child(3) img,
+      .card:nth-child(2) img,
+      .card:nth-child(3) img {
         display: none !important;
+        opacity: 0 !important;
       }
 
-      .player-photo, 
-      .product-image, 
-      .news-card__image,
-      .card-img,
-      .image-container {
-        min-height: 180px;
-        width: 100%;
-        display: grid !important;
-        place-items: center !important;
-        background: #eaf2f7 !important;
-        position: relative;
+      /* Colocamos la nueva foto para la noticia del medio (reemplazo de Messi) */
+      .news-card:nth-child(2) .image-container,
+      .card:nth-child(2) .image-container,
+      .news-card:nth-child(2) figure,
+      .card:nth-child(2) figure {
+        background-image: url('https://architectural.hunterdouglaslatam.com/wp-content/uploads/2021/12/enews_imagenes_imagen_2365.jpg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        min-height: 215px;
+        display: block !important;
       }
 
-      .player-photo::before,
-      .product-image::before,
-      .news-card__image::before,
-      .card-img::before,
-      .image-container::before {
-        content: "DPM" !important;
-        color: #071d39 !important;
-        font-weight: 900 !important;
-        font-size: 1.4rem !important;
+      /* Colocamos la nueva foto para la tercera noticia (reemplazo de Brasil) */
+      .news-card:nth-child(3) .image-container,
+      .card:nth-child(3) .image-container,
+      .news-card:nth-child(3) figure,
+      .card:nth-child(3) figure {
+        background-image: url('https://i.ytimg.com/vi/tG2Zm8hZLiQ/maxresdefault.jpg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        min-height: 215px;
         display: block !important;
       }
     </style>
