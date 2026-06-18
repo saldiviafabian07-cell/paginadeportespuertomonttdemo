@@ -11,15 +11,13 @@
     <title>Deportes Puerto Montt | Sitio Oficial</title>
     
     <style>
-      /* --- PARTE 1: OCULTAR TODOS LOS JUGADORES (GLOBAL) --- */
-      
-      /* 1.1 Oculta las imágenes reales de los jugadores en toda la página */
+      /* Oculta las imágenes reales de los jugadores de forma estricta */
       .player-photo img {
         display: none !important;
         opacity: 0 !important;
       }
 
-      /* 1.2 Convierte el contenedor de la foto en un recuadro gris */
+      /* Transforma el contenedor de la foto en el recuadro gris */
       .player-photo {
         min-height: 180px !important;
         width: 100% !important;
@@ -29,47 +27,12 @@
         position: relative !important;
       }
 
-      /* 1.3 Centra el texto "DPM" en el recuadro vacío de CADA jugador */
+      /* Añade el texto DPM en mayúsculas y centrado */
       .player-photo::before {
         content: "DPM" !important;
         color: #071d39 !important;
         font-weight: 900 !important;
         font-size: 1.4rem !important;
-        display: block !important;
-      }
-
-      /* --- PARTE 2: REEMPLAZAR FOTOS ESPECÍFICAS DE NOTICIAS --- */
-
-      /* 2.1 Ocultamos las imágenes originales de Messi y de la polera de Brasil */
-      .news-card:nth-child(2) img,
-      .card:nth-child(2) img,
-      .news-card:nth-child(3) img,
-      .card:nth-child(3) img {
-        display: none !important;
-        opacity: 0 !important;
-      }
-
-      /* 2.2 Ponemos la nueva foto para la noticia de Messi (segunda noticia) */
-      .news-card:nth-child(2) .image-container,
-      .card:nth-child(2) .image-container,
-      .news-card:nth-child(2) figure,
-      .card:nth-child(2) figure {
-        background-image: url('PEGA_AQUI_EL_LINK_DE_LA_FOTO_DEL_EQUIPO') !important;
-        background-size: cover !important;
-        background-position: center !important;
-        min-height: 215px !important;
-        display: block !important;
-      }
-
-      /* 2.3 Ponemos la nueva foto para la noticia de Brasil (tercera noticia) */
-      .news-card:nth-child(3) .image-container,
-      .card:nth-child(3) .image-container,
-      .news-card:nth-child(3) figure,
-      .card:nth-child(3) figure {
-        background-image: url('PEGA_AQUI_EL_LINK_DE_LA_FOTO_DE_LA_NUEVA_POLERA') !important;
-        background-size: cover !important;
-        background-position: center !important;
-        min-height: 215px !important;
         display: block !important;
       }
     </style>
