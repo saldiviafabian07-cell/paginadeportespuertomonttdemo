@@ -1,24 +1,5 @@
 <!doctype html>
 <html lang="es-CL">
-<style>
-  .squad-group:nth-child(4) .player-photo img {
-    display: none;
-  }
-
-  .squad-group:nth-child(4) .player-photo {
-    min-height: 180px;
-    display: grid;
-    place-items: center;
-    background: #eaf2f7;
-  }
-
-  .squad-group:nth-child(4) .player-photo::before {
-    content: "DPM";
-    color: #071d39;
-    font-weight: 900;
-    font-size: 1.4rem;
-  }
-</style>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,6 +15,30 @@
     />
     <meta property="og:type" content="website" />
     <title>Deportes Puerto Montt | Sitio Oficial</title>
+    
+    <style>
+      /* 1. Oculta las imágenes reales en todos los contenedores de fotos */
+      .player-photo img {
+        display: none !important;
+      }
+
+      /* 2. Aplica el recuadro gris con diseño de grilla a todos los contenedores */
+      .player-photo {
+        min-height: 180px;
+        display: grid;
+        place-items: center;
+        background: #eaf2f7;
+      }
+
+      /* 3. Agrega el texto "DPM" en el centro de cada recuadro vacío */
+      .player-photo::before {
+        content: "DPM";
+        color: #071d39;
+        font-weight: 900;
+        font-size: 1.4rem;
+      }
+    </style>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
